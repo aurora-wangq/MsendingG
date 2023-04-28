@@ -25,32 +25,19 @@ win = tk.Tk()
 win.title("5T5啊啊啊啊啊啊哈哈哈哈哈哈哈")
 win.geometry("1614x514")
 
-#检查文件是否存在且创建内容文件并获取文件位置
-# s = __file__
-# s1 = ""
-# for i in s[0:-9]:
-#     s1=s1+i
-# s1=s1+"con.txt"
-a = 1
 try:
-    with open(r"C:\Users\con.txt", "r", encoding='utf-8') as f:  #打开文本
+    with open("con.txt", "r", encoding='utf-8') as f:  #打开文本
         content_  = f.read()
     f.close()
 except IOError:
-    a = 2
-if a == 2:
-    open(r"C:\Users\con.txt",'w')
+    open("con.txt",'x')
     sss = "未获取到内容，请往"
-    sss += r"C:\User\con.txt"
+    sss += "con.txt"
     sss += "内添加文件内容！"
     l2 = tk.Label(win,text=sss,font=('TimesNewRoman',20))
     l2.pack()
     win.mainloop()
     sys.exit(0)
-else:
-#读取内容文件
-    with open(r"C:\Users\con.txt", "r", encoding='utf-8') as f:  #打开文本
-        content_  = f.read()   #读取文本
 
 #发送消息
 #准备时间
