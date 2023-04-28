@@ -1,5 +1,5 @@
 # MsendingG
 MsendingG
-使用方法:
-第一次启动程序程序将自动在程序所在目录下创建con.txt文件，编辑内容后再次打开输入发送次数，点击OK在5秒内将鼠标选中到要发送的聊天框内即可
-原理为模拟手动复制粘贴（自行理解用法）截止至目前仅应用MoveToEx的更新至源码文件，exe文件所创建的con文件仍在c\user
+使用方法:按照引导输入点击OK并在此后5秒内将鼠标点击选中在需要发送的对话框内
+Thank you to MoveToEx for his contribution to this project
+感谢MoveToEx对此项目代码的改进
