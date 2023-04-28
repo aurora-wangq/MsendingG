@@ -66,7 +66,7 @@ while pp > 0:
             pyautogui.typewrite('\n')
         else:
             sss = "未获取到内容，请往"
-            sss += r"C:\Users\con.txt"
+            sss += "con.txt"
             sss += "内添加文件内容！"
             l2 = tk.Label(win,text=sss,font=('TimesNewRoman',20))
             l2.pack()
